@@ -1,12 +1,12 @@
 # tenzinhub
 This is my 'MEVN' (MongoDB, Express.js, Vue.js, Node.js) full-stack web app. 
 
-###Here is my plan for this project:
+### Here is my plan for this project:
 The server here will webscrape weather API, TTC API and show them to my Vue.js front end. I also plan to have some basic board games like 'Connect 4', and a Tibetan board game named 'Sho'. For this, I plan to implement a basic JWT-based authentication system and integrate socket.io for the games.
 
 -------------------------
 
-###Here is my progress:
+### Here is my progress:
 - [ ] Front-end (Vue.js, VueX Store, Vue Router, Vuetify.js)
   - [ ] Setup a Nuxt.js web app skeleton (I'll try Nuxt.js instead of Vue CLI. I'm already very proficient with Vue CLI and only familiar with Nuxt.js)
   - [ ] Create a main dashboard page
