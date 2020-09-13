@@ -23,6 +23,9 @@ The server here will webscrape weather API, TTC API and show them to my Vue.js f
     - [ ] Develop the main connect-4 game page. Create a div container to show the connect-4 game. Visualize the connect-4 stones and their placement properly based on their position data from the server.
   - [ ] Create a hub page for `Sho` - a Tibetan dice game. Allow users to create game lobbies for other users to join and start a connect-4 game. Show all open lobbies.
     - [ ] Develop the main `Sho` game.
+
+-------------------------
+
 - [ ] Back-end (Express.js, MongoDB/Mongoose, bcrypt)
   - [ ] Setup an express.js skeleton server code via `npx express-generator`. Follow the [express.js guide page](https://expressjs.com/en/advanced/best-practice-security.html)
   - [ ] Connect the express.js server with Mongoose
