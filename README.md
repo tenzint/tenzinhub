@@ -27,7 +27,7 @@ The server here will webscrape weather API, TTC API and show them to my Vue.js f
 -------------------------
 
 - [ ] Back-end (Express.js, MongoDB/Mongoose, bcrypt)
-  - [ ] Setup an express.js skeleton server code via `npx express-generator`. Follow the [express.js guide page](https://expressjs.com/en/advanced/best-practice-security.html)
+  - [x] Setup an express.js skeleton server code via `npx express-generator`. Follow the [express.js guide page](https://expressjs.com/en/advanced/best-practice-security.html)
   - [ ] Connect the express.js server with Mongoose
   - [ ] Integrate a JWT-based authentication system with the server and store it persistently with MongoDB database
     - [ ] Develop logic for signing up new users
