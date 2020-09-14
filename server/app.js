@@ -5,7 +5,7 @@ const logger = require('morgan');
 const helmet = require('helmet');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const rateLimiterRedisMiddleware = require('./middlewares/rateLimiterRedis');
+const rateLimiterMongoMiddleware = require('./middlewares/rateLimiterMongo');
 
 const app = express();
 
@@ -27,7 +27,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(rateLimiterRedisMiddleware);
+app.use(rateLimiterMongoMiddleware);
 
 // routes
 require('./routes/auth.routes')(app);
