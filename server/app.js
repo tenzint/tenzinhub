@@ -7,9 +7,6 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const rateLimiterRedisMiddleware = require('./middlewares/rateLimiterRedis');
 
-const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/user.routes');
-
 const app = express();
 
 var corsOptions = {
@@ -33,7 +30,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(rateLimiterRedisMiddleware);
 
 // routes
-app.use('/', indexRouter);
 require('./routes/auth.routes')(app);
 require('./routes/user.routes')(app);
 
