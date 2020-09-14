@@ -29,12 +29,12 @@ The server here will webscrape weather API, TTC API and show them to my Vue.js f
 - [ ] Back-end (Express.js, MongoDB/Mongoose (ODM), JWT + bcrypt)
   - [x] Setup an express.js skeleton server code via `npx express-generator`. Follow the [express.js guide page](https://expressjs.com/en/advanced/best-practice-security.html)
   - [x] Connect the express.js server with Mongoose ODM (Object Data Mapping for MongoDB)
-  - [ ] Integrate a JWT-based authentication system with the server and store it persistently with MongoDB database. Use bcrypt to salt password
+  - [x] Integrate a JWT-based authentication system with the server and store it persistently with MongoDB database. Use bcrypt to salt password
     - [x] Develop logic for signing up new users
     - [x] Develop logic for logging in users
-  - [ ] Develop an API handler for weather API
-    - [ ] Web scrape weather API data from external source given some options (locations, etc)
-    - [ ] Serve the front-end with meaningful weather data
+  - [x] Develop an API handler for weather API
+    - [x] Web scrape weather API data from external source given some options (locations, etc)
+    - [x] Serve the front-end with meaningful weather data
   - [ ] Develop an API handler for TTC API
     - [ ] Web scrape TTC API data from external source
     - [ ] Serve the front-end with meaningful TTC arrival data

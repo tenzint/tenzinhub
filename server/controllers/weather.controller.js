@@ -1,15 +1,18 @@
 const weather = require('weather-js');
 
 exports.AllWeatherData = (req, res) => {
-  let location = 'Toronto, ON';
+  let location = req.body.location || 'Toronto, ON';
+  let degree = req.body.degree || 'C';
   weather.find({
     search: location,
-    degreeType: 'C'
+    degreeType: degree
   }, function(err, result) {
-    if(err) console.log(err);
-    let fullWeatherData = JSON.stringify(result, null, 2);
-    console.log(fullWeatherData);
-    
+    if(err) {
+      console.log(err);
+      res.status(400).send({ message: err });
+      return;
+    }    
     res.status(200).send(result);
-  })
+    return;
+  });
 }
