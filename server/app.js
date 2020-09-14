@@ -33,6 +33,7 @@ app.use(rateLimiterMongoMiddleware);
 require('./routes/auth.routes')(app);
 require('./routes/user.routes')(app);
 require('./routes/weather.routes')(app);
+require('./routes/ttc.routes')(app);
 
 // ----- MongoDB ---------
 
