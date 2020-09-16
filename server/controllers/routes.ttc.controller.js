@@ -1,4 +1,8 @@
-var xml2js = require('xml2js');
+/*
+ * https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8217e43a-bba2-4e6c-82f5-bf6d1a52545d/resource/ec9a4a76-a963-4cfb-85d9-044b5a87af77/download/xml-feed-documentation.pdf
+ */
+
+ var xml2js = require('xml2js');
 const got = require('got');
 
 // Get a list of all Bus/Streetcar routes. eg. 76, Royal York Road bus...
