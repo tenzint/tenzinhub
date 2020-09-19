@@ -6,8 +6,8 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    titleTemplate: '%s - client',
-    title: 'client',
+    titleTemplate: '%s - TenzinHub',
+    title: 'Tenzin Hub',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -41,18 +41,41 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    '@nuxt/http',
+    '@nuxtjs/proxy',
   ],
 
   // Content module configuration (https://go.nuxtjs.dev/content-config)
   content: {},
 
+  http: {
+    // proxyHeaders: false
+    proxy: true,        // this is for CORS. Check proxy for real URI
+    host: 'localhost',
+    port: 3000,
+    prefix: '/api',
+  },
+
+  proxy: {
+    '/api': {
+      target: 'http://localhost:3000/api',
+      pathRewrite: {
+        '^/api': '/'
+      },
+    },
+  },
+
   // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
+    treeShake: true,
     theme: {
-      dark: true,
+      options: {
+        customProperties: true,
+      },
       themes: {
         dark: {
+          background: '#00a86b',
           primary: colors.blue.darken2,
           accent: colors.grey.darken3,
           secondary: colors.amber.darken3,
@@ -60,6 +83,9 @@ export default {
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           success: colors.green.accent3,
+        },
+        light: {
+          background: '#d0f0c0',
         },
       },
     },

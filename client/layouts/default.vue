@@ -71,14 +71,19 @@ export default {
       fixed: false,
       items: [
         {
-          icon: 'mdi-apps',
-          title: 'Welcome',
+          icon: 'mdi-view-dashboard-variant-outline',
+          title: 'Dashboard',
           to: '/',
         },
         {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire',
+          icon: 'mdi-weather-sunny-alert',
+          title: 'Weather',
+          to: '/weather',
+        },
+        {
+          icon: 'mdi-bus-alert',
+          title: 'TTC Transit',
+          to: '/ttc',
         },
       ],
       miniVariant: false,
