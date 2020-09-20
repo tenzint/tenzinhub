@@ -24,4 +24,4 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 #### Client - Browser
 
 Weather Page of Nuxt.js powered UI
-![Weather Page](https://tenzint.github.com/tenzinhub/client/weather.png)
+![Weather Page](https://raw.githubusercontent.com/tenzint/tenzinhub/master/client/weather.png)

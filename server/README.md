@@ -30,10 +30,10 @@ For more details, visit the [Express.js website](https://expressjs.com/en/starte
 #### Server - Postman
 
 Weather API using the Postman app
-![Weather API](https://tenzint.github.com/tenzinhub/server/weather.png)
+![Weather API](https://raw.githubusercontent.com/tenzint/tenzinhub/master/server/weather.png)
 
 TTC Transit API specific route - Postman
-![TTC specific route API](https://tenzint.github.com/tenzinhub/server/ttc-specific-route.png)
+![TTC specific route API](https://raw.githubusercontent.com/tenzint/tenzinhub/master/server/ttc-specific-route.png)
 
 TTC Transit API predictions - Postman
-![TTC Predictions API](https://tenzint.github.com/tenzinhub/server/ttc-predictions.png)
+![TTC Predictions API](https://raw.githubusercontent.com/tenzint/tenzinhub/master/server/ttc-predictions.png)
