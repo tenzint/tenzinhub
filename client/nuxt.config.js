@@ -1,4 +1,4 @@
-import colors from 'vuetify/es5/util/colors'
+import colors from 'vuetify/es5/util/colors';
 
 export default {
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
@@ -30,7 +30,7 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/stylelint
-    '@nuxtjs/stylelint-module',
+    // '@nuxtjs/stylelint-module',
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
   ],
@@ -50,7 +50,7 @@ export default {
 
   http: {
     // proxyHeaders: false
-    proxy: true,        // this is for CORS. Check proxy for real URI
+    proxy: true, // this is for CORS. Check proxy for real URI
     host: 'localhost',
     port: 3000,
     prefix: '/api',
@@ -60,7 +60,7 @@ export default {
     '/api': {
       target: 'http://localhost:3000/api',
       pathRewrite: {
-        '^/api': '/'
+        '^/api': '/',
       },
     },
   },
@@ -97,4 +97,4 @@ export default {
   server: {
     port: 8080,
   },
-}
+};
