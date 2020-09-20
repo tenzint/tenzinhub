@@ -92,8 +92,18 @@ export default {
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {},
+  build: {
+    extend(config) {
+      config.plugins = config.plugins.filter(
+        (plugin) => plugin.constructor.name !== 'UglifyJsPlugin'
+      );
+    },
+  },
 
+  target: 'static',
+  router: {
+    base: '/tenzinhub/',
+  },
   server: {
     port: 8080,
   },

@@ -24,3 +24,16 @@ For more details, visit the [Express.js website](https://expressjs.com/en/starte
 #### Important Info
 
 - [Official TTC API Documentation](https://ckan0.cf.opendata.inter.prod-toronto.ca/dataset/8217e43a-bba2-4e6c-82f5-bf6d1a52545d/resource/ec9a4a76-a963-4cfb-85d9-044b5a87af77/download/xml-feed-documentation.pdf)
+
+### Screenshots of working project
+
+#### Server - Postman
+
+Weather API using the Postman app
+![Weather API](https://tenzint.github.com/tenzinhub/server/weather.png)
+
+TTC Transit API specific route - Postman
+![TTC specific route API](https://tenzint.github.com/tenzinhub/server/ttc-specific-route.png)
+
+TTC Transit API predictions - Postman
+![TTC Predictions API](https://tenzint.github.com/tenzinhub/server/ttc-predictions.png)

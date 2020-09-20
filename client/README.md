@@ -18,3 +18,10 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+### Screenshots of working project
+
+#### Client - Browser
+
+Weather Page of Nuxt.js powered UI
+![Weather Page](https://tenzint.github.com/tenzinhub/client/weather.png)

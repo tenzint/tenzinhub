@@ -36,3 +36,21 @@ The server here will webscrape weather API, TTC API and show them to my Vue.js f
     - [x] Serve the front-end with meaningful TTC arrival data
 
 -------------------------
+
+### Screenshots of working project
+
+#### Client - Browser
+
+Weather Page of Nuxt.js powered UI
+![Weather Page](https://tenzint.github.com/tenzinhub/client/weather.png)
+
+#### Server - Postman
+
+Weather API using the Postman app
+![Weather API](https://tenzint.github.com/tenzinhub/server/weather.png)
+
+TTC Transit API specific route - Postman
+![TTC specific route API](https://tenzint.github.com/tenzinhub/server/ttc-specific-route.png)
+
+TTC Transit API predictions - Postman
+![TTC Predictions API](https://tenzint.github.com/tenzinhub/server/ttc-predictions.png)
