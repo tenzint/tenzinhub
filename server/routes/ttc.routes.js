@@ -3,7 +3,7 @@ const ttcPredictionsController = require("../controllers/predictions.ttc.control
 
 module.exports = function(app) {
   app.get("/api/ttc/routes/all", ttcRoutesController.getTtcAllRoutes);
-  app.post("/api/ttc/routes/specific", ttcRoutesController.postTtcSpecificRoute);
+  app.get("/api/ttc/routes/specific", ttcRoutesController.postTtcSpecificRoute);
 
   // TTC predictions
   app.post("/api/ttc/predictions", ttcPredictionsController.postTtcPredictions);

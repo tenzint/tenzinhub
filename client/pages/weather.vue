@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1 class="text-center">Weather Info</h1>
     <p v-if="$fetchState.pending">Fetching posts...</p>
     <p v-else-if="$fetchState.error">
       Error while fetching weather: {{ $fetchState.error.message }}... baseURL =

@@ -21,7 +21,7 @@ I initially planned to have board games in this project but I am now seperating 
     - [x] Use Nuxt's http module (that has `ky` - made by same author of `got`) to get weather API data from server
   - [ ] Develop and style TTC page
     - [ ] Use Nuxt's http module to get TTC data from server
-    - [ ] ~~Use Google Map API~~ - Not going to use Google Map API for visual representation. They require credit card info and I don't want unwanted bill in the long run.
+    - [x] ~~Use Google Map API~~ - Not going to use Google Map API for visual representation. They require credit card info and I don't want unwanted bill in the long run.
 
 -------------------------
 
