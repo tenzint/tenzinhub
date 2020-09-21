@@ -2,22 +2,26 @@
 This is my 'MEVN' (MongoDB, Express.js, Vue.js, Node.js) full-stack web app. 
 
 ### Here is my plan for this project:
-The server here will webscrape weather API, TTC API and show them to my Vue.js front end. I also plan to have some basic board games like 'Connect 4', and a Tibetan board game named 'Sho'. For this, I plan to implement a basic JWT-based authentication system and integrate socket.io for the games.
+The server here will webscrape ~~weather API,~~ TTC API and show them to my Vue.js front end.
+
+I have found an npm package named `weather-js` that scrapes weather data from weather.msn.com for me. Other alternatives require me to have API key or a user account. Those were simple and doable, but I felt `weather-js` is good enough for me.
+
+I initially planned to have board games in this project but I am now seperating them into another project named `tenzingames`. I did integrate mongoose, bcryptjs, jsonwebtoken into backend server and created authentication API that will be left unused for this project.
 
 ### Here is my progress:
+----------------------
+
 #### Front-end (Vue.js, VueX Store, Vue Router, Vuetify.js + Nuxt.js)
 - [ ] Overall front-end
-  - [ ] Setup a Nuxt.js web app skeleton (I'll try Nuxt.js instead of Vue CLI. I'm already very proficient with Vue CLI and only familiar with Nuxt.js)
-  - [ ] Create a main dashboard page
-    - [ ] Initialize and style the dashboard
-    - [ ] Integrate all related components and finalize the dashboard page
-  - [ ] Authentication pages
-    - [ ] Create and style signup page
-    - [ ] Create and style login page
-  - [ ] Develop and style a weather page
-    - [ ] Use axios to get weather API data from server
+  - [x] Setup a Nuxt.js web app skeleton (I'll try Nuxt.js instead of Vue CLI. I'm already very proficient with Vue CLI and only familiar with Nuxt.js)
+  - [x] Create a main dashboard page
+    - [x] Initialize and style the dashboard with a carousel
+    - [x] Integrate all related components and finalize the dashboard page
+  - [x] Develop and style a weather page
+    - [x] Use Nuxt's http module (that has `ky` - made by same author of `got`) to get weather API data from server
   - [ ] Develop and style TTC page
-    - [ ] Use axios to get TTC data from server
+    - [ ] Use Nuxt's http module to get TTC data from server
+    - [ ] ~~Use Google Map API~~ - Not going to use Google Map API for visual representation. They require credit card info and I don't want unwanted bill in the long run.
 
 -------------------------
 
