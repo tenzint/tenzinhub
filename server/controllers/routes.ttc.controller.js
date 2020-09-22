@@ -39,7 +39,7 @@ exports.postTtcSpecificRoute = (req, res) => {
       xml2js.parseStringPromise(response.body /*, options */)
         .then(function (result) {
           // console logging the unparsed XML data takes dozens of seconds to just print. Too long!
-          return res.send({ message: result });
+          return res.send({ message: result.body.route });
         })
         .catch(function (err) {
           // Failed
