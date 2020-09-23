@@ -12,15 +12,15 @@ I initially planned to have board games in this project but I am now seperating 
 ----------------------
 
 #### Front-end (Vue.js, VueX Store, Vue Router, Vuetify.js + Nuxt.js)
-- [ ] Overall front-end
+- [x] Overall front-end
   - [x] Setup a Nuxt.js web app skeleton (I'll try Nuxt.js instead of Vue CLI. I'm already very proficient with Vue CLI and only familiar with Nuxt.js)
   - [x] Create a main dashboard page
     - [x] Initialize and style the dashboard with a carousel
     - [x] Integrate all related components and finalize the dashboard page
   - [x] Develop and style a weather page
     - [x] Use Nuxt's http module (that has `ky` - made by same author of `got`) to get weather API data from server
-  - [ ] Develop and style TTC page
-    - [ ] Use Nuxt's http module to get TTC data from server
+  - [x] Develop and style TTC page
+    - [x] Use Nuxt's http module to get TTC data from server
     - [x] ~~Use Google Map API~~ - Not going to use Google Map API for visual representation. They require credit card info and I don't want unwanted bill in the long run.
 
 -------------------------
