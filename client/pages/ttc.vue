@@ -5,7 +5,7 @@
         <v-card
           class="mx-auto"
           width="80%"
-          height="80vh"
+          min-height="80vh"
           color="teal accent-3"
           hover
         >
@@ -56,7 +56,7 @@
         </v-card>
       </v-col>
       <v-col cols="6">
-        <v-card color="light-green darken-3" dark height="80vh" hover>
+        <v-card color="light-green darken-3" dark min-height="80vh" hover>
           <v-card-title class="headline light-green darken-4 px-auto">
             Choose stops
           </v-card-title>
@@ -75,34 +75,41 @@
               @change="fetchSpecificRoute()"
             ></v-autocomplete>
           </v-card-text>
-          <v-divider key="lsjflsjfs"></v-divider>
+          <v-divider class="purple darken-1"></v-divider>
           <v-radio-group
             v-model="tagDirection"
             mandatory
             @change="fetchPredictions()"
           >
-            <v-row v-for="item in ttcStops" :key="item.$.tag">
-              <v-col cols="auto">
-                <v-autocomplete
-                  v-model="routeDirection[item.$.tag]"
-                  :items="item.stop"
-                  class="ml-8"
-                  color="white"
-                  item-text="$.title"
-                  item-value="$.stopId"
-                  :label="item.$.branch + ' ' + item.$.name + ' - Stop'"
-                  auto-select-first
-                  @change="fetchPredictions()"
-                ></v-autocomplete>
-              </v-col>
-              <v-col cols="auto"
-                ><v-radio
-                  color="purple"
-                  :label="item.$.branch + ' ' + item.$.name"
-                  :value="item.$.tag"
-                ></v-radio
-              ></v-col>
-            </v-row>
+            <template v-for="item in ttcStops">
+              <v-row :key="item.$.tag">
+                <v-col cols="auto">
+                  <v-autocomplete
+                    v-model="routeDirection[item.$.tag]"
+                    :items="item.stop"
+                    class="ml-8"
+                    color="white"
+                    item-text="$.title"
+                    item-value="$.stopId"
+                    :label="item.$.branch + ' ' + item.$.name + ' - Stop'"
+                    auto-select-first
+                    @change="fetchPredictions()"
+                  ></v-autocomplete>
+                </v-col>
+                <v-col cols="auto"
+                  ><v-radio
+                    color="purple"
+                    :label="item.$.branch + ' ' + item.$.name"
+                    :value="item.$.tag"
+                  ></v-radio
+                ></v-col>
+              </v-row>
+              <v-divider
+                :key="item.$.tag + '-div'"
+                inset
+                class="purple lighten-1"
+              ></v-divider>
+            </template>
           </v-radio-group>
         </v-card>
       </v-col>
