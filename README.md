@@ -41,6 +41,19 @@ I initially planned to have board games in this project but I am now seperating 
 
 -------------------------
 
+### Demo of working project
+
+Dashboard Page - powered by Nuxt.js
+![Weather Page](https://raw.githubusercontent.com/tenzint/tenzinhub/master/client/dashboard-demo.mp4)
+
+Weather Page - powered by Nuxt.js
+![Weather Page](https://raw.githubusercontent.com/tenzint/tenzinhub/master/client/weather-demo.mp4)
+
+TTC Page - powered by Nuxt.js
+![Weather Page](https://raw.githubusercontent.com/tenzint/tenzinhub/master/client/ttc-demo.mp4)
+
+------------------------------------------------------------------------
+
 ### Screenshots of working project
 
 #### Client - Browser

@@ -27,13 +27,11 @@
               }}</v-subheader>
               <v-divider></v-divider>
               <v-subheader>Slow down to get predictions</v-subheader>
-              <v-subheader>API accessed at {{ this.time }}</v-subheader>
+              <v-subheader>API accessed at {{ time }}</v-subheader>
             </div>
             <div v-else>
-              <v-subheader>{{
-                predictionsData.direction[0].$.title
-              }}</v-subheader>
-              <v-subheader>API accessed at {{ this.time }}</v-subheader>
+              <v-subheader> {{ predictionsData.$.stopTitle }}</v-subheader>
+              <v-subheader>API accessed at {{ time }}</v-subheader>
               <v-divider></v-divider>
               <template
                 v-for="(item, i) in predictionsData.direction[0].prediction"

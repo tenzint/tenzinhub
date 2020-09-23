@@ -23,5 +23,16 @@ For detailed explanation on how things work, check out [Nuxt.js docs](https://nu
 
 #### Client - Browser
 
+Dashboard Page - powered by Nuxt.js
+![Weather Page](https://raw.githubusercontent.com/tenzint/tenzinhub/master/client/dashboard-demo.mp4)
+
+Weather Page - powered by Nuxt.js
+![Weather Page](https://raw.githubusercontent.com/tenzint/tenzinhub/master/client/weather-demo.mp4)
+
+TTC Page - powered by Nuxt.js
+![Weather Page](https://raw.githubusercontent.com/tenzint/tenzinhub/master/client/ttc-demo.mp4)
+
+------------------------------------------
+
 Weather Page of Nuxt.js powered UI
 ![Weather Page](https://raw.githubusercontent.com/tenzint/tenzinhub/master/client/weather.png)
