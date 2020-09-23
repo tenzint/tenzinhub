@@ -14,7 +14,7 @@
 
         <v-text-field
           v-model="searchLocation"
-          label="Search 'City / Country' or 'Postal Code'"
+          label="Search 'City, Country' or 'Postal Code'"
           outlined
           shaped
           @keyup.enter="fetchWeather()"
@@ -131,14 +131,10 @@ export default {
   },
   methods: {
     async fetchWeather() {
-      console.log('--------- fetchinng weather ------');
-      console.log('location = ', this.searchLocation);
       this.weather = await this.$http.$post(`/weather`, {
         degree: this.degreeRadioGroup,
         location: this.searchLocation,
       });
-      console.log(this.weather[0]);
-      console.log('Weather posted.');
       this.time = moment(
         this.weather[0].current.date +
           ' ' +

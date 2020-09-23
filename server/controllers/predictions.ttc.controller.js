@@ -25,7 +25,7 @@ exports.postTtcPredictions = (req, res) => {
     .then(response => {
       xml2js.parseStringPromise(response.body /*, options */)
         .then(function (result) {
-          return res.send({ message: result.body });
+          return res.send({ message: result.body.predictions[0] });
         })
         .catch(function (err) {
           // Failed

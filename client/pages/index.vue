@@ -50,7 +50,7 @@
       <v-sheet :color="colors[3]" height="100%">
         <v-row class="fill-height" align="center" justify="center">
           <div class="display-3">
-            My <a target="_blank" href="/tenzinhub/weather">'Weather'</a> page
+            My <a href="/tenzinhub/weather">'Weather'</a> page
           </div>
         </v-row>
       </v-sheet>
@@ -59,7 +59,7 @@
       <v-sheet :color="colors[4]" height="100%">
         <v-row class="fill-height" align="center" justify="center">
           <div class="display-3">
-            My <a target="_blank" href="/tenzinhub/ttc">'TTC Transit'</a> page
+            My <a href="/tenzinhub/ttc">'TTC Transit'</a> page
           </div>
         </v-row>
       </v-sheet>
