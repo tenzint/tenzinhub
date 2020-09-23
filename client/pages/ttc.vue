@@ -23,7 +23,7 @@
             </v-card-title>
             <div v-if="!predictionsData.direction">
               <v-subheader>{{
-                predictions.$.dirTitleBecauseNoPredictions
+                predictionsData.$.dirTitleBecauseNoPredictions
               }}</v-subheader>
               <v-divider></v-divider>
               <v-subheader>Slow down to get predictions</v-subheader>
@@ -45,7 +45,8 @@
                   <v-list-item-content>
                     <v-list-item-title
                       ><strong
-                        >{{ item.$.minutes }}:{{ item.$.seconds % 60 }}</strong
+                        >{{ item.$.minutes }} minutes and
+                        {{ item.$.seconds % 60 }} seconds</strong
                       >
                     </v-list-item-title>
                   </v-list-item-content>
@@ -89,14 +90,12 @@
                   :items="item.stop"
                   class="ml-8"
                   color="white"
-                  item-text="$.stopId"
+                  item-text="$.title"
                   item-value="$.stopId"
                   :label="item.$.branch + ' ' + item.$.name + ' - Stop'"
                   auto-select-first
                   @change="fetchPredictions()"
                 ></v-autocomplete>
-                <!-- 
-                  item-text="$.title" -->
               </v-col>
               <v-col cols="auto"
                 ><v-radio
@@ -178,6 +177,7 @@ export default {
       });
       this.predictionsData = apiPredictions.message;
       this.time = moment().format('LTS');
+      console.log('predictions data = ', this.predictionsData);
     },
   },
 };
