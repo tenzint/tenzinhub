@@ -1,6 +1,40 @@
 # tenzinhub
 This is my 'MEVN' (MongoDB, Express.js, Vue.js, Node.js) full-stack web app. 
 
+
+### Demo of working project
+
+Dashboard Page - powered by Nuxt.js
+![Weather Page](https://raw.githubusercontent.com/tenzint/tenzinhub/master/client/dashboard-demo.gif)
+
+Weather Page - powered by Nuxt.js
+![Weather Page](https://raw.githubusercontent.com/tenzint/tenzinhub/master/client/weather-demo.gif)
+
+TTC Page - powered by Nuxt.js
+![Weather Page](https://raw.githubusercontent.com/tenzint/tenzinhub/master/client/ttc-demo.gif)
+
+------------------------------------------------------------------------
+
+### Screenshots of working project
+
+#### Client - Browser
+
+Weather Page of Nuxt.js powered UI
+![Weather Page](https://raw.githubusercontent.com/tenzint/tenzinhub/master/client/weather.png)
+
+#### Server - Postman
+
+Weather API using the Postman app
+![Weather API](https://raw.githubusercontent.com/tenzint/tenzinhub/master/server/weather.png)
+
+TTC Transit API specific route - Postman
+![TTC specific route API](https://raw.githubusercontent.com/tenzint/tenzinhub/master/server/ttc-specific-route.png)
+
+TTC Transit API predictions - Postman
+![TTC Predictions API](https://raw.githubusercontent.com/tenzint/tenzinhub/master/server/ttc-predictions.png)
+
+---------------------------------------------------
+
 ### Here is my plan for this project:
 The server here will webscrape ~~weather API,~~ TTC API and show them to my Vue.js front end.
 
@@ -40,34 +74,3 @@ I initially planned to have board games in this project but I am now seperating 
     - [x] Serve the front-end with meaningful TTC arrival data
 
 -------------------------
-
-### Demo of working project
-
-Dashboard Page - powered by Nuxt.js
-![Weather Page](https://raw.githubusercontent.com/tenzint/tenzinhub/master/client/dashboard-demo.gif)
-
-Weather Page - powered by Nuxt.js
-![Weather Page](https://raw.githubusercontent.com/tenzint/tenzinhub/master/client/weather-demo.gif)
-
-TTC Page - powered by Nuxt.js
-![Weather Page](https://raw.githubusercontent.com/tenzint/tenzinhub/master/client/ttc-demo.gif)
-
-------------------------------------------------------------------------
-
-### Screenshots of working project
-
-#### Client - Browser
-
-Weather Page of Nuxt.js powered UI
-![Weather Page](https://raw.githubusercontent.com/tenzint/tenzinhub/master/client/weather.png)
-
-#### Server - Postman
-
-Weather API using the Postman app
-![Weather API](https://raw.githubusercontent.com/tenzint/tenzinhub/master/server/weather.png)
-
-TTC Transit API specific route - Postman
-![TTC specific route API](https://raw.githubusercontent.com/tenzint/tenzinhub/master/server/ttc-specific-route.png)
-
-TTC Transit API predictions - Postman
-![TTC Predictions API](https://raw.githubusercontent.com/tenzint/tenzinhub/master/server/ttc-predictions.png)
