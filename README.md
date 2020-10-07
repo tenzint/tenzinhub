@@ -1,6 +1,13 @@
 # tenzinhub
+
 This is my 'MEVN' (MongoDB, Express.js, Vue.js, Node.js) full-stack web app. 
 
+###### Link
+
+https://tenzint.github.io/tenzinhub/
+Static page is up ^ (There is no backend support; view the demo GIFs)
+
+--------------------------------------------------------------------------------------------
 
 ### Demo of working project
 
