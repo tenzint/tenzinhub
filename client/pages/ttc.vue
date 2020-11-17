@@ -175,12 +175,9 @@ export default {
       });
     },
     async fetchPredictions() {
-      console.log('--- fetching predictions ---');
       if (!this.routeDirection[this.tagDirection]) {
         return;
       }
-      console.log('routeTag = ', this.routeTag);
-      console.log('stop ID = ', this.routeDirection[this.tagDirection]);
       const apiPredictions = await this.$http.$post(
         'https://tenzinhub-api.glitch.me/api/ttc/predictions',
         {
@@ -190,7 +187,6 @@ export default {
       );
       this.predictionsData = apiPredictions.message;
       this.time = moment().format('LTS');
-      console.log('predictions data = ', this.predictionsData);
     },
   },
 };

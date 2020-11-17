@@ -1,6 +1,5 @@
 export default function ({ $http }) {
   $http.onRequest((config) => {
-    console.log('Making request to ' + config.url);
     $http.setHeader('User-Agent', 'Get REST APi Response! - Your Client!');
   });
 

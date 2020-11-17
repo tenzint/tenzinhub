@@ -29,7 +29,7 @@ export default {
         content:
           'A personal API full-stack web app project that predicts TTC transit in Toronto and weather in every city',
       },
-      { property: 'og:image', content: '/tt.ico' },
+      { property: 'og:image', content: '/tenzinhub/tt.ico' },
 
       // Twitter
       { property: 'twitter:card', content: 'summary_large_image' },
@@ -43,9 +43,9 @@ export default {
         content:
           'A personal API full-stack web app project that predicts TTC transit in Toronto and weather in every city',
       },
-      { property: 'twitter:image', content: '/tt.ico' },
+      { property: 'twitter:image', content: '/tenzinhub/tt.ico' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/tt.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/tenzinhub/tt.ico' }],
   },
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [],
