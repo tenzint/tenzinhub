@@ -52,15 +52,14 @@ export default {
     // proxyHeaders: false
     proxy: true, // this is for CORS. Check proxy for real URI
     host: 'https://tenzinhub-api.glitch.me/',
-    port: 3000,
     prefix: '/api',
   },
 
   proxy: {
-    '/api': {
+    '/api/': {
       target: 'https://tenzinhub-api.glitch.me/api',
       pathRewrite: {
-        '^/api': '',
+        '^/api/': '',
       },
     },
   },
