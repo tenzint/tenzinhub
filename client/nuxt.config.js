@@ -5,17 +5,48 @@ export default {
   ssr: false,
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
+
   head: {
-    titleTemplate: '%s - TenzinHub',
+    titleTemplate: '%s',
     title: 'Tenzin Hub',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
-    ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-  },
+      // heymeta socials below
+      { name: 'title', content: 'Tenzin Hub' },
+      {
+        name: 'description',
+        content:
+          'A personal API full-stack web app project that predicts TTC transit in Toronto and weather in every city',
+      },
+      // Open Graph / Facebook
+      { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'https://tenzint.github.io/tenzinhub/' },
+      { property: 'og:title', content: 'Tenzin Hub' },
+      {
+        property: 'og:description',
+        content:
+          'A personal API full-stack web app project that predicts TTC transit in Toronto and weather in every city',
+      },
+      { property: 'og:image', content: '/tt.ico' },
 
+      // Twitter
+      { property: 'twitter:card', content: 'summary_large_image' },
+      {
+        property: 'twitter:url',
+        content: 'https://tenzint.github.io/tenzinhub/',
+      },
+      { property: 'twitter:title', content: 'Tenzin Hub' },
+      {
+        property: 'twitter:description',
+        content:
+          'A personal API full-stack web app project that predicts TTC transit in Toronto and weather in every city',
+      },
+      { property: 'twitter:image', content: '/tt.ico' },
+    ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/tt.ico' }],
+  },
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [],
 
