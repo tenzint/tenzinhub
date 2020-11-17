@@ -20,7 +20,9 @@ export default {
   css: [],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [],
+  plugins: [
+    '~/plugins/http',
+  ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
@@ -53,6 +55,7 @@ export default {
     proxy: true, // this is for CORS. Check proxy for real URI
     host: 'https://tenzinhub-api.glitch.me/',
     prefix: '/api',
+    baseURL: 'https://tenzinhub-api.glitch.me/',
   },
 
   proxy: {
