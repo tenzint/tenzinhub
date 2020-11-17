@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
     <v-row justify="center">
-      <v-col cols="6">
+      <v-col cols="12" md="6">
         <v-card
           class="mx-auto"
           width="80%"
@@ -55,7 +55,7 @@
           </div>
         </v-card>
       </v-col>
-      <v-col cols="6">
+      <v-col cols="12" md="6">
         <v-card color="light-green darken-3" dark min-height="80vh" hover>
           <v-card-title class="headline light-green darken-4 px-auto">
             Choose stops
@@ -181,10 +181,13 @@ export default {
       }
       console.log('routeTag = ', this.routeTag);
       console.log('stop ID = ', this.routeDirection[this.tagDirection]);
-      const apiPredictions = await this.$http.$post('/ttc/predictions', {
-        stopId: this.routeDirection[this.tagDirection],
-        routeTag: this.routeTag,
-      });
+      const apiPredictions = await this.$http.$post(
+        'https://tenzinhub-api.glitch.me/api/ttc/predictions',
+        {
+          stopId: this.routeDirection[this.tagDirection],
+          routeTag: this.routeTag,
+        }
+      );
       this.predictionsData = apiPredictions.message;
       this.time = moment().format('LTS');
       console.log('predictions data = ', this.predictionsData);
