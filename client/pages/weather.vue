@@ -132,10 +132,13 @@ export default {
   },
   methods: {
     async fetchWeather() {
-      this.weather = await this.$http.$post(`https://tenzinhub-api.glitch.me/api/weather`, {
-        degree: this.degreeRadioGroup,
-        location: this.searchLocation,
-      });
+      this.weather = await this.$http.$post(
+        `https://tenzinhub-api.glitch.me/api/weather`,
+        {
+          degree: this.degreeRadioGroup,
+          location: this.searchLocation,
+        }
+      );
       this.time = moment(
         this.weather[0].current.date +
           ' ' +
