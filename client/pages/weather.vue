@@ -3,7 +3,8 @@
     <p v-if="$fetchState.pending">Fetching posts...</p>
     <p v-else-if="$fetchState.error">
       Error while fetching weather: {{ $fetchState.error.message }}... baseURL =
-      {{ $http.baseURL }}\n ... whole http = {{ $http }}
+      {{ $http.baseURL }}
+      ... whole http = {{ $http }}
     </p>
     <v-row v-else>
       <v-col cols="auto">
@@ -131,7 +132,7 @@ export default {
   },
   methods: {
     async fetchWeather() {
-      this.weather = await this.$http.$post(`/weather`, {
+      this.weather = await this.$http.$post(`https://tenzinhub-api.glitch.me/api/weather`, {
         degree: this.degreeRadioGroup,
         location: this.searchLocation,
       });

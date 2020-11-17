@@ -145,11 +145,11 @@ export default {
   },
   methods: {
     async fetchAllRoutes() {
-      const apiAllLocations = await this.$http.$get(`/ttc/routes/all`);
+      const apiAllLocations = await this.$http.$get(`https://tenzinhub-api.glitch.me/api/ttc/routes/all`);
       this.allLocations = apiAllLocations.message;
     },
     async fetchSpecificRoute() {
-      const apiData = await this.$http.$post(`/ttc/routes/specific`, {
+      const apiData = await this.$http.$post(`https://tenzinhub-api.glitch.me/api/ttc/routes/specific`, {
         routeTag: this.routeTag,
       });
       this.apiRouteData = apiData.message;
